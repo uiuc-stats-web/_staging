@@ -10,6 +10,7 @@ export class HomeComponent implements OnInit {
   title: string;
   description: string;
   appDescription: string;
+  logoPath = '../../assets/logos/Datathon Word Logo.png';
 
   constructor(private dataService: ApplyDataService) {
   }
