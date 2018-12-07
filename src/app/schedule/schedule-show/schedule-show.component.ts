@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { SDayItem } from '../sDayItem.model';
-import { ScheduleService } from '../schedule.service';
+import { ScheduleService } from '../../_service/schedule.service';
 import { Subscription } from 'rxjs';
 
 @Component({

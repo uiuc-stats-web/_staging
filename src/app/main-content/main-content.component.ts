@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewContainerRef } from '@angular/core';
-import { ContentService } from './content.service';
+import { ContentService } from '../_service/content.service';
 
 @Component({
   selector: 'app-main-content',

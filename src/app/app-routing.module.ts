@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { WorkshopComponent } from './workshop/workshop.component';
 import { SponsorComponent } from './sponsor/sponsor.component';
@@ -16,7 +15,7 @@ const routes: Routes = [
   { path: 'schedule', component: ScheduleComponent, data: {state: 'schedule'} },
   { path: 'workshop', component: WorkshopComponent, data: {state: 'workshop'} },
   { path: 'sponsor', component: SponsorComponent, data: {state: 'sponsor'} },
-  { path: '**', component: PageNotFoundComponent },
+  { path: '**', redirectTo: '/home'},
 ];
 
 @NgModule({
