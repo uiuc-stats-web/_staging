@@ -2,19 +2,19 @@
   <div class="d-flex flex-grow-1">
     <span class="w-100 d-lg-none d-block">
       <!-- hidden spacer to center brand on mobile --></span>
-    <a class="navbar-brand d-none d-lg-inline-block" [routerLink]="['/home']">
+    <a class="navbar-brand d-inline-block align-middle" [routerLink]="['/home']">
       Home
     </a>
-    <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
-      <img src="//placehold.it/40?text=LOGO" alt="logo">
+    <a class="navbar-brand-two mx-auto d-none d-lg-inline-block" [routerLink]="['/home']">
+      <img src="/assets/logos/Logo.png" alt="logo">
     </a>
     <div class="w-100 text-right">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-home">
-        <span class="navbar-toggler-icon"></span>
+        <img src="/assets/logos/Logo.png" alt="logo">
       </button>
     </div>
   </div>
-  <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbar-home">
+  <div class="collapse navbar-collapse flex-grow-1 text-center" id="navbar-home">
     <ul class="navbar-nav ml-auto flex-nowrap">
       <li class="nav-item">
         <a [routerLink]="['/about']" routerLinkActive="active" class="nav-link m-2 menu-item">About</a>
@@ -26,10 +26,10 @@
         <a [routerLink]="['/schedule']" routerLinkActive="active" class="nav-link m-2 menu-item">Schedule</a>
       </li>
       <li class="nav-item">
-        <a [routerLink]="['/workshop']" routerLinkActive="active" class="nav-link m-2 menu-item">Workshop</a>
+        <a [routerLink]="['/sponsor']" routerLinkActive="active" class="nav-link m-2 menu-item">Sponsor</a>
       </li>
       <li class="nav-item">
-        <a [routerLink]="['/sponsor']" routerLinkActive="active" class="nav-link m-2 menu-item">Sponsor</a>
+        <a [routerLink]="['/workshop']" routerLinkActive="active" class="nav-link m-2 menu-item">Workshop</a>
       </li>
     </ul>
   </div>
