@@ -25,6 +25,7 @@ import { SponsorService } from './sponsor/sponsor.service';
 import { ScheduleService } from './_service/schedule.service';
 import { ContentService } from './_service/content.service';
 import { ApplyDataService } from './_service/apply-data.service';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { ApplyDataService } from './_service/apply-data.service';
     SponsorComponent,
     SponsorItemComponent,
     MainContentComponent,
-    FaqComponent
+    FaqComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,

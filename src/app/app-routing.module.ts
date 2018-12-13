@@ -7,6 +7,7 @@ import { WorkshopComponent } from './workshop/workshop.component';
 import { SponsorComponent } from './sponsor/sponsor.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FaqComponent } from './faq/faq.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent, data: {state: 'about'} },
   { path: 'schedule', component: ScheduleComponent, data: {state: 'schedule'} },
   { path: 'workshop', component: WorkshopComponent, data: {state: 'workshop'} },
-  { path: 'sponsor', component: SponsorComponent, data: {state: 'sponsor'} },
+  { path: 'sponsor', component: SponsorComponent, data: { state: 'sponsor' } },
+  { path: 'faq', component: FaqComponent, data: {state: 'faq'} },
   { path: '**', redirectTo: '/home'},
 ];
 

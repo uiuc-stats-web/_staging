@@ -3,12 +3,21 @@
 }
 
 #intro {
-  background: linear-gradient(#e66465, #9198e5);
+  background: #979EA1;
   min-height: 100%;
   min-height: 100vh;
   
   display: flex;
   align-items: center;
+
+  p {
+    font-size: 2em;
+  }
+
+  a, a :active {
+    text-decoration: none;
+    color: black;
+  }
 
   #desc2 {
     position: absolute;
