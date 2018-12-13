@@ -1,18 +1,24 @@
-# DsWeb
+# DsWeb - Staging
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.4.
+This project is the staging repository for the official website. All changes should be made within a branch here before deployment to the website repository.
 
-## Development server
+## Development
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This project is built with the latest Angular Cli: Angular 7. Install the following packages locally before making modifications:
+- [Node.js](https://nodejs.org/en/) 10.x
+- [Angular Cli] 7 `npm install -g @angular/cli`
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng serve` or just `ng s` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng build` to build the project. The build artifacts will be stored in the `docs/` directory. Use the `--prod` flag for a production build.
+
+Run the following for building files for github pages:
+`ng build --prod --output-path docs --base-href \_staging\`
+`cp docs/index.html docs/404.html`
+
+Then commit to the repository like you normally do.
 
 ## Running unit tests
 
