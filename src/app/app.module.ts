@@ -26,6 +26,7 @@ import { ScheduleService } from './_service/schedule.service';
 import { ContentService } from './_service/content.service';
 import { ApplyDataService } from './_service/apply-data.service';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { FaqService } from './_service/faq.service';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,14 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     BrowserAnimationsModule,
     HttpClientModule
   ],
-  providers: [ScheduleService, WorkshopService, SponsorService, ContentService, ApplyDataService],
+  providers: [
+    ScheduleService,
+    WorkshopService,
+    SponsorService,
+    ContentService,
+    FaqService,
+    ApplyDataService
+  ],
   bootstrap: [AppComponent],
   entryComponents: [HomeComponent]
 })
