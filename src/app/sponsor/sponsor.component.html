@@ -4,7 +4,7 @@
       <h1 class="display-4 text-center">Sponsors</h1>
     </div>
     <div class="row mt-2">
-      <div class="col-sm-4" *ngFor="let item of sponsors">
+      <div *ngFor="let item of sponsors" class="col-md-{{item.cols}}">
         <app-sponsor-item [sponsorItem]="item"></app-sponsor-item>
       </div>
     </div>
