@@ -11,7 +11,6 @@ export class FaqService {
   constructor(private dataService: ApplyDataService) {
     this.dataService.getData('faq').subscribe(
       data => {
-        console.log(data);
         this.updateItems(data);
         this.fireFaq.next(this.getFaq());
       },
