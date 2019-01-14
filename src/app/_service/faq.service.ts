@@ -9,8 +9,10 @@ export class FaqService {
   fireFaq = new Subject<Faq[]>();
 
   constructor(private dataService: ApplyDataService) {
+    this.faqs = [];
     this.dataService.getData('faq').subscribe(
       data => {
+        console.log(data);
         this.updateItems(data);
         this.fireFaq.next(this.getFaq());
       },
@@ -25,7 +27,7 @@ export class FaqService {
   }
 
   updateItems(data) {
-    const faqItems = [];
+    const faqItems = data;
     this.validateUpdate(faqItems);
   }
 

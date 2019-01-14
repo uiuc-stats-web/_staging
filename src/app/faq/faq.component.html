@@ -2,17 +2,9 @@
   <div class="container">
     <h1 class="display-4 mb-5 pt-5 text-center">FAQ</h1>
     <div class="row justify-content-center">
-      <div class="col-xs-12 col-md-5 offset-1">
-        <h4 class="">A Very LongLongLongLongLongLong Question</h4>
-        <p>Answer</p>
-      </div>
-      <div class="col-xs-12 col-md-5 offset-1">
-        <h4 class="">A Very LongLongLongLongLongLong Question</h4>
-        <p>Answer</p>
-      </div>
-      <div class="col-xs-12 col-md-5 offset-1">
-        <h4 class="">A Very LongLongLongLongLongLong Question</h4>
-        <p>Answer</p>
+      <div class="col-xs-12 col-md-5 offset-1" *ngFor="let item of faqs">
+        <h4 class="question"> {{ item.question }} </h4>
+        <p class="answer"> {{item.answer}} </p>
       </div>
     </div>
     <footer class="footer">

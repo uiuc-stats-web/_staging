@@ -7,11 +7,17 @@
     font-size: 1.2rem;
   }
 
+  .question {
+    padding: 5px;
+    border-bottom: 2px solid black;
+  }
+
   footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-top: 2em;
   }
 }
