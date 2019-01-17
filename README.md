@@ -17,9 +17,12 @@ The app will automatically reload if you change any of the source files.
 
 Run `ng build` to build the project. The build artifacts will be stored in the `docs/` directory. Use the `--prod` flag for a production build.
 
+If you haven't install gh-pages helper:
+`npm i angular-cli-ghpages --save-dev`
+
 Run the following for building files for github pages:  
-`ng build --prod --output-path docs --base-href \_staging\`  
-`cp docs/index.html docs/404.html`  
+`ng build --prod --base-href "https://uiuc-stats-web.github.io/_staging/"`  
+`ngh --dir dist/ds-web`  
 
 Then commit to the repository like you normally do.
 
