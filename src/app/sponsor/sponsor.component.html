@@ -5,7 +5,7 @@
     </div>
     <div class="box">
       <div class="row mt-2">
-        <div *ngFor="let item of sponsors" class="col-md-{{item.cols}}">
+        <div *ngFor="let item of sponsors" class="col-xs-{{item.cols/2 | number:'1.0-0'}} col-md-{{item.cols}}">
           <app-sponsor-item [sponsorItem]="item"></app-sponsor-item>
         </div>
       </div>

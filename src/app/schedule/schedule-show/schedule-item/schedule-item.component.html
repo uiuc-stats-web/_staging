@@ -1,21 +1,21 @@
-<div id="schedule-item" class="col-sm-12 col-md-8 shadow" [@list]>
+<div id="schedule-item" class="col-sm-12 col-md-8 offset-md-2 shadow" [@list]>
   <div id="schedule-title" class="row">
     <div class="col-sm-6">
-      <h4 class="text-center"> {{itemlist.title}} </h4>
+      <h4 class="text-center "> {{itemlist.title}} </h4>
     </div>
     <div class="col-sm-6 mb-2 mt-1">
-      <h4 class="text-center">{{ itemlist.date | date:'EEEE, MMMM d'}}</h4>
+      <h4 class="text-center ">{{ itemlist.date | date:'EEEE, MMMM d'}}</h4>
     </div>
   </div>
   <div id="schedule-content" class="row p-0 mb-1" *ngFor="let item of itemlist.items">
-    <div class="col-sm-6"> {{ item.name }} </div>
+    <div class="col-xs-4 col-sm-6 text-sm-center"> {{ item.name }} </div>
     <ng-container *ngIf="item.timeStart !== '' && item.timeEnd !== ''; then thenTemplate; else elseTemplate"></ng-container>
     <ng-template #thenTemplate>
-      <div class="col-sm-4 offset-2"> {{ item.timeStart | date:'shortTime'}}-{{ item.timeEnd | date:'shortTime' }} </div>
+      <div class="col-xs-4 col-sm-4 offset-sm-2"> {{ item.timeStart | date:'shortTime'}}-{{ item.timeEnd | date:'shortTime' }} </div>
     </ng-template>
     <ng-template #elseTemplate>
-      <div class="col-sm-4 offset-2" *ngIf="item.timeStart !== ''"> {{ item.timeStart | date:'shortTime'}} </div>
-      <div class="col-sm-4 offset-2" *ngIf="item.timeEnd !== ''"> {{ item.timeEnd | date:'shortTime'}} </div>
+      <div class="col-xs-4 col-sm-4 offset-sm-2" *ngIf="item.timeStart !== ''"> {{ item.timeStart | date:'shortTime'}} </div>
+      <div class="col-xs-4 col-sm-4 offset-sm-2" *ngIf="item.timeEnd !== ''"> {{ item.timeEnd | date:'shortTime'}} </div>
     </ng-template>
   </div>
 </div>
