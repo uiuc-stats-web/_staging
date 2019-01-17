@@ -18,7 +18,6 @@ export class ScheduleShowComponent implements OnInit, OnDestroy {
     this.subscription = this.sService.fireItems.subscribe(
       (items: SDayItem[]) => {
         this.items = items;
-        console.log(this.items);
       }
     );
     this.items = this.sService.getItems();

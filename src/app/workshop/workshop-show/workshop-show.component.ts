@@ -19,7 +19,6 @@ export class WorkshopShowComponent implements OnInit, OnDestroy {
       .subscribe(
         (workshops: Workshop[]) => {
           this.workshops = workshops;
-          console.log(this.workshops);
         }
       );
       this.workshops = this.workshopService.getWorkshops();

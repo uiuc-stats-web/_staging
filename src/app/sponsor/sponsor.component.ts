@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
 import { Sponsor } from './sponsor.model';
 import { SponsorService } from './sponsor.service';
 import { Subscription } from 'rxjs';
@@ -6,11 +6,12 @@ import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-sponsor',
   templateUrl: './sponsor.component.html',
-  styleUrls: ['./sponsor.component.scss']
+  styleUrls: ['../_global/background.scss', './sponsor.component.scss']
 })
-export class SponsorComponent implements OnInit, OnDestroy {
+export class SponsorComponent implements OnInit, OnDestroy, AfterViewInit {
   sponsors: Sponsor[];
   private subscription: Subscription;
+  pos: number;
 
   constructor(private sponsorService: SponsorService) { }
 
@@ -21,6 +22,10 @@ export class SponsorComponent implements OnInit, OnDestroy {
       }
     );
     this.sponsors = this.sponsorService.getSponsors();
+  }
+
+  ngAfterViewInit() {
+    this.pos = document.getElementById('sponsor-title').offsetTop;
   }
 
   ngOnDestroy() {

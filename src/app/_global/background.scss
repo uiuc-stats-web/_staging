@@ -1,0 +1,23 @@
+.jumbotron {
+  margin-top: 0%;
+  margin-bottom: 0%;
+  background: url(/assets/bg-lg.png);
+  background-size: cover;
+  height: 100%;
+  min-height: 100vh;
+  color: antiquewhite;
+  align-items: center;
+
+  h1 {
+    margin-top: 1em;
+    text-align: center;
+  }
+
+  padding-bottom: 2em;
+
+  // .container {
+  //   background-color: antiquewhite;
+  //   background-blend-mode: darken;
+  //   // padding: 20px;
+  // }
+}

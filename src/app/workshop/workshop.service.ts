@@ -51,7 +51,6 @@ export class WorkshopService {
   constructor(private dataService: ApplyDataService) {
     this.dataService.getData('workshop').subscribe(
       data => {
-        console.log(data);
         this.updateWorkshops(data);
         this.fireWorkshops.next(this.getWorkshops());
       },

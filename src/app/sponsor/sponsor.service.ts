@@ -20,7 +20,6 @@ export class SponsorService {
   constructor(private dataService: ApplyDataService) {
     this.dataService.getData('sponsor').subscribe(
       data => {
-        console.log(data);
         this.updateItems(data);
         this.emitSponsors.next(this.getSponsors());
       },

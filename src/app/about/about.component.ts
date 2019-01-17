@@ -5,7 +5,7 @@ import { ApplyDataService } from '../_service/apply-data.service';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss'],
+  styleUrls: ['../_global/background.scss', './about.component.scss'],
   animations: [paragraphAnimation]
 })
 export class AboutComponent implements OnInit {
@@ -16,7 +16,6 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
     this.dataService.getData('about').subscribe(
       (data) => {
-        // console.log(data['Title']);
         this.description = data['Description'] ? data['Description'] : 'Description';
       },
       (error) => {

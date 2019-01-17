@@ -1,5 +1,11 @@
-@import "../../../../node_modules/bootstrap/scss/bootstrap-grid.scss";
 
 #sponsor-item {
-    @include make-container;
+    background: white;
+    opacity: 0.5;
+
+    .responsive {
+    width: 100%;
+    // max-width: 200px;
+    height: auto;
+    }
 }

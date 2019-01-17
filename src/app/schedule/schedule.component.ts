@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-schedule',
   templateUrl: './schedule.component.html',
-  styleUrls: ['./schedule.component.scss']
+  styleUrls: ['../_global/background.scss', './schedule.component.scss']
 })
-export class ScheduleComponent implements OnInit {
+export class ScheduleComponent implements OnInit, AfterViewInit {
+  pos: number;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  ngAfterViewInit() {
+    this.pos = document.getElementById('schedule-title').offsetTop;
+  }
 }

@@ -22,7 +22,6 @@ export class ScheduleService {
   constructor(private dataService: ApplyDataService) {
     this.dataService.getData('schedule').subscribe(
       data => {
-        console.log(data);
         this.updateItems(data);
         this.fireItems.next(this.getItems());
       },

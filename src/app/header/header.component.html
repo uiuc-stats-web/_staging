@@ -2,10 +2,10 @@
   <div class="d-flex flex-grow-1">
     <span class="w-100 d-lg-none d-block">
       <!-- hidden spacer to center brand on mobile --></span>
-    <a class="navbar-brand d-inline-block align-middle" [routerLink]="['/home']">
+    <a class="navbar-brand d-inline-block align-middle" style="cursor: pointer;" (click)="navigateTo('home')" >
       Home
     </a>
-    <a class="navbar-brand-two mx-auto d-none d-lg-inline-block" [routerLink]="['/home']">
+    <a class="navbar-brand-two mx-auto d-none d-lg-inline-block" style="cursor: pointer;" (click)="navigateTo('home')" >
       <img src="assets/logos/Logo.png" alt="logo">
     </a>
     <div class="w-100 text-right">
@@ -16,20 +16,20 @@
   </div>
   <div class="collapse navbar-collapse flex-grow-1 text-center" id="navbar-home">
     <ul class="navbar-nav ml-auto flex-nowrap">
-      <li class="nav-item">
-        <a [routerLink]="['/about']" routerLinkActive="active" class="nav-link m-2 menu-item">About</a>
+      <li class="nav-item" [ngClass]="{'active':activeComponent==='About'}">
+        <a href="#about" class="nav-link m-2 menu-item">About</a>
       </li>
-      <li class="nav-item">
-        <a [routerLink]="['/faq']" routerLinkActive="active" class="nav-link m-2 menu-item">FAQ</a>
+      <li class="nav-item" [ngClass]="{'active':activeComponent==='Faq'}">
+        <a href="#faq" class="nav-link m-2 menu-item">FAQ</a>
       </li>
-      <li class="nav-item">
-        <a [routerLink]="['/schedule']" routerLinkActive="active" class="nav-link m-2 menu-item">Schedule</a>
+      <li class="nav-item" [ngClass]="{'active':activeComponent==='Schedule'}">
+        <a href="#schedule" class="nav-link m-2 menu-item">Schedule</a>
       </li>
-      <li class="nav-item">
-        <a [routerLink]="['/sponsor']" routerLinkActive="active" class="nav-link m-2 menu-item">Sponsor</a>
+      <li class="nav-item" [ngClass]="{'active':activeComponent==='Sponsor'}">
+        <a href="#sponsor" class="nav-link m-2 menu-item">Sponsor</a>
       </li>
-      <li class="nav-item">
-        <a [routerLink]="['/workshop']" routerLinkActive="active" class="nav-link m-2 menu-item">Workshop</a>
+      <li class="nav-item" [ngClass]="{'active':activeComponent==='Workshop'}">
+        <a href="#workshop" class="nav-link m-2 menu-item">Workshop</a>
       </li>
     </ul>
   </div>

@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-workshop',
   templateUrl: './workshop.component.html',
-  styleUrls: ['./workshop.component.scss']
+  styleUrls: ['../_global/background.scss', './workshop.component.scss']
 })
-export class WorkshopComponent implements OnInit {
+export class WorkshopComponent implements OnInit, AfterViewInit {
+  pos: number;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  ngAfterViewInit() {
+    this.pos = document.getElementById('workshop-title').offsetTop;
   }
 
 }
