@@ -2,28 +2,11 @@
   margin-top: 0%;
   margin-bottom: 0%;
 
-  @media (max-width: 575.98px) {
-    background: url(/assets/bg-sm.png);
-  }
-
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    background: url(/assets/bg-sm.png);
-  }
-
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    background: url(/assets/bg-md.png);
-  }
-
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-    background: url(/assets/bg-lg.png);
-  }
-
-  @media (min-width: 1200px) {
-    background: url(/assets/bg-lg.png);
-  }
-
-  // background: url(/assets/bg-lg.png);
+  background: url(/assets/bg-lg.png);
+  background-repeat:no-repeat;
   background-size: cover;
+  background-position: center;
+
   height: 100%;
   min-height: 100vh;
   color: antiquewhite;

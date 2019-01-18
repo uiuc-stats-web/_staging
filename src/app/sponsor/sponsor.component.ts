@@ -6,7 +6,7 @@ import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-sponsor',
   templateUrl: './sponsor.component.html',
-  styleUrls: ['../_global/background.scss', './sponsor.component.scss']
+  styleUrls: ['../_global/background.scss', '../_global/box.scss', './sponsor.component.scss']
 })
 export class SponsorComponent implements OnInit, OnDestroy, AfterViewInit {
   sponsors: Sponsor[];

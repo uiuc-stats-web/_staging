@@ -1,13 +1,10 @@
-<div id="sponsor" class="jumbotron jumbotron-fluid mb-0">
-  <div class="container">
-    <div class="row">
-      <h1 id="sponsor-title" class="display-4">Sponsors</h1>
-    </div>
-    <div class="box">
-      <div class="row mt-2">
-        <div *ngFor="let item of sponsors" class="col-xs-{{item.cols/2 | number:'1.0-0'}} col-md-{{item.cols}}">
-          <app-sponsor-item [sponsorItem]="item"></app-sponsor-item>
-        </div>
+<div id="sponsor" class="jumbotron jumbotron-fluid">
+  <h1 id="sponsor-title" class="display-4 text-center">Sponsors</h1>
+  <div class="container box">
+    <div class="row mt-2">
+      <!-- <div *ngFor="let item of sponsors" class="col-xs-{{item.cols/2 | number:'1.0-0'}} col-md-{{item.cols}} p-2"> -->
+      <div *ngFor="let item of sponsors" class="col-{{item.cols}} p-2">
+        <app-sponsor-item [sponsorItem]="item"></app-sponsor-item>
       </div>
     </div>
   </div>

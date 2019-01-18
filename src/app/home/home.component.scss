@@ -18,8 +18,23 @@
   background-repeat:no-repeat;
   background-size:cover;
   background-position:center;
+
+  // on large screens
+  @media screen and (min-width: 1200px) {
+    height: 100vh;
+    img {
+      margin-top: 10vh;
+      padding-left: 3em;
+    }
+    #desc1 {
+      margin-top: 2em;
+    }
+  }
+
+  // on small screens
+  max-height: 100vh;
   
-  display: flex;
+  // display: flex;
 
   #desc1 {
     top: 75%;
