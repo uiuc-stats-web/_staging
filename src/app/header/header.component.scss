@@ -1,7 +1,13 @@
 .navbar-custom {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
 
-    img {
+    #desktop-logo {
+        margin-inline-start: 1em;
+        height: 70px;
+        width: 50px;
+    }
+
+    #mobile-logo {
         height: 50px;
         width: 30px;
     }
@@ -28,4 +34,6 @@
 
 #navbar-home {
   float: right;
+    // float: none;
+    // display: inline-block;
 }

@@ -9,4 +9,32 @@
     border-bottom: 2px solid black;
   }
 
+  .iconbar {
+    display: inline-block;
+  }
+
+  .fa {
+    padding: 0.3em;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-envelope {
+    background: #3B5998;
+    color: white;
+  }
+
 }
