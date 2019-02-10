@@ -348,9 +348,6 @@ MIT
 @angular/platform-browser
 MIT
 
-@angular/router
-MIT
-
 @angular/animations
 MIT
 
